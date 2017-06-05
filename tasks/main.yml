@@ -1,2 +1,14 @@
 ---
-# tasks file for HungryUp.desktop-iOS-dev
+- name: "Install from homebrew"
+  homebrew:
+    name:
+      - cocoapods
+    state: present
+
+- name: "Install from homebrew cask"
+  homebrew_cask:
+    name:
+      - fastlane
+    state: present
+
+
